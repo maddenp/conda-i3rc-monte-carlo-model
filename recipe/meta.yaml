@@ -1,0 +1,22 @@
+package:
+  name: i3rc-monte-carlo-model
+  version: 0.1.0
+
+build:
+  number: 0
+  script: make -j$CPU_COUNT
+
+requirements:
+  build:
+    - {{ compiler('fortran') }}
+    - make
+  host:
+    - netcdf-fortran
+  run:
+    - netcdf-fortran
+
+source:
+  path: ../src
+
+about:
+  license: GPL2
