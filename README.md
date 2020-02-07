@@ -7,6 +7,6 @@ Instructions:
 1. Install [Miniconda](https://docs.conda.io/en/latest/miniconda.html).
 2. Install conda build tools: `conda install -y conda-build conda-verify`.
 3. Build the code: `conda build -c conda-forge --override-channels --error-overlinking recipe`.
-4. Create an environment: `conda create -y -n i3rc -c conda-forge --override-channels --use-local`.
+4. Create an environment: `conda create -y -n i3rc -c local -c conda-forge --override-channels i3rc-monte-carlo-model`.
 5. Activate environment: `conda activate i3rc`.
 6. Run `MakeMieTable`, `PhysicalPropertiesToDomain`, or `OpticalPropertiesToDomain`.
