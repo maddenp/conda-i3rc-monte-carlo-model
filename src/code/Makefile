@@ -1,4 +1,4 @@
-LIB = ../libi3rc.a
+LIB  = ../libi3rc.a
 OBJS = $(SRCS:.F95=.o)
 SRCS = $(wildcard *.F95)
 

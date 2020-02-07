@@ -1,7 +1,6 @@
-FFLAGS += -I../code -I../integrators
-LIB     = ../libi3rc.a
-SRCS    = $(wildcard *.F95)
-OBJS    = $(SRCS:.F95=.o)
+LIB  = ../libi3rc.a
+SRCS = $(wildcard *.F95)
+OBJS = $(SRCS:.F95=.o)
 
 .PHONY: all
 

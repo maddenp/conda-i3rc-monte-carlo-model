@@ -4,7 +4,7 @@ package:
 
 build:
   number: 0
-  script: make -j$CPU_COUNT
+  script: make FFLAGS="$FFLAGS -I$PREFIX/include -J$PREFIX/include" -j$CPU_COUNT
 
 requirements:
   build:
